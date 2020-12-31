@@ -1,0 +1,337 @@
+    <!DOCTYPE html>
+    <html lang="zxx">
+
+    <head>
+        <title>Blog</title>   
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/form.css">
+        </head>
+
+    <body>
+        <head>
+            <div class="row banner-top">
+                <div class="col-sm-9 headerr">
+                    <h4 style="display: block;"><strong style="margin-left:55%;">Miễn Phí Ship</strong> với đơn hàng trên 600.000VNĐ</h4>
+                </div>
+                <div class="header__top__right">
+                    <div class="header__top__right__auth">
+                        <a class="dn1 hvr-underline-from-center" id="b" href="#dangnhap" onclick="openDN()"><i class="fa fa-users"></i>ĐĂNG NHẬP</a>
+                        <a class="dn hvr-underline-from-center" id="a" href="#dangky" onclick="openDK()"> ĐĂNG KÍ</a>
+                    </div>
+                </div>
+            </div>
+                <!-- --------------------đăng nhập------------------ -->
+        
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDN()">&times;</a>
+            <div class="overlay-content">
+              <div class="giua">
+                <h3>ĐĂNG NHẬP</h3>
+              </div>
+              <div class="form-style-6">
+                <form>
+                  <p>Tên đăng nhập</p>
+                  <input type="text" name="field1" value="User" />
+                  <p>Mật khẩu</p>
+                  <input type="password" value="123456789" />
+                  <a href="#HOME" onclick="dn()"><input type="button" value="Đăng nhập"></a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- ------------đăng kí------------- -->
+        
+          <div id="myNav1" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDK()">&times;</a>
+            <div class="overlay-content">
+              <div class="giua">
+                <a>
+                  <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+              </div>
+              <form class="form-style-7">
+                <ul>
+                  <li>
+                    <label for="name" class="sao">Tên đăng nhập(*)</label>
+                    <input type="text" name="name" maxlength="100" class="sao" id="tendangnhap">
+                  </li>
+                  <li>
+                    <label for="password" class="sao">Mật khẩu(*)</label>
+                    <input type="password" maxlength="100" class="sao" id="mk1">
+                  </li>
+                  <li>
+                    <label for="password" class="sao">Nhập lại mật khẩu(*)</label>
+                    <input type="password" name="name" maxlength="100" class="sao" id="mk2">
+                  </li>
+                  <li>
+                    <label for="url">Ngày sinh</label>
+                    <input type="date" name="date" maxlength="100">
+                  </li>
+                  <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" maxlength="100">
+                  </li>
+                  <li>
+                    <input type="button" value="Đăng ký" onclick="check()" id="btn">
+                    <input type="reset" value="Đặt lại">
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </head>
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="./index.html">Trang chủ</a></li>
+                                <li><a href="./shop-grid.html">Sản phẩm</li>                                          
+                                <li class="active"><a href="./blog.html">Blog</a></li>
+                                <li><a href="./shoping-cart.html">Thanh Toán</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./BaoCao.html">About us</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero hero-normal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="hero__categories">
+                            <div class="hero__categories__all">
+                                <i class="fa fa-bars"></i>
+                                <span>Tất cả danh mục</span>
+                            </div>
+                            <ul>
+                                <li><a href="./buy-1.html">Bàn</a></li>
+                                <li><a href="./buy-1.html">Ghế</a></li>
+                                <li><a href="./buy-1.html">Tủ</a></li>
+                                <li><a href="./buy-1.html">Giường</a></li>
+                                <li><a href="./buy-1.html">Kệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="hero__search">
+                            <div class="hero__search__form">
+                                <form action="#">
+                                    <div class="hero__search__categories">
+                                        Tất cả danh mục
+                                        <span class="arrow_carrot-down"></span>
+                                    </div>
+                                    <input type="text" placeholder="Tìm kiếm ...">
+                                    <button type="submit" class="site-btn">SEARCH</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="breadcrumb__text">
+                            <h2>Blog</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="blog spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="blog__sidebar">
+                            <div class="blog__sidebar__search">
+                                <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button type="submit"><span class="icon_search"></span></button>
+                                </form>
+                            </div>
+                            <div class="blog__sidebar__item">
+                                <h4>Thể loại</h4>
+                                <ul>
+                                    <li><a href="#">Tất cả</a></li>
+                                    <li><a href="#">Bàn (20)</a></li>
+                                    <li><a href="#">Tủ (5)</a></li>
+                                    <li><a href="#">Vật dụng nội thất (9)</a></li>
+                                    <li><a href="#">Mở rộng (10)</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog__sidebar__item">
+                                <h4>Tin tức</h4>
+                                <div class="blog__sidebar__recent">
+                                    <a href="#" class="blog__sidebar__recent__item">
+                                        <div class="blog__sidebar__recent__item__pic">
+                                            <img src="img/blog/sidebar/sr-1.jpg" alt="">
+                                        </div>
+                                        <div class="blog__sidebar__recent__item__text">
+                                            <h6>09 Kinds Of Vegetables<br /> Protect The Liver</h6>
+                                            <span>MAR 05, 2019</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog__sidebar__recent__item">
+                                        <div class="blog__sidebar__recent__item__pic">
+                                            <img src="img/blog/sidebar/sr-2.jpg" alt="">
+                                        </div>
+                                        <div class="blog__sidebar__recent__item__text">
+                                            <h6>Tips You To Balance<br /> Nutrition Meal Day</h6>
+                                            <span>MAR 05, 2019</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog__sidebar__recent__item">
+                                        <div class="blog__sidebar__recent__item__pic">
+                                            <img src="img/blog/sidebar/sr-3.jpg" alt="">
+                                        </div>
+                                        <div class="blog__sidebar__recent__item__text">
+                                            <h6>4 Principles Help You Lose <br />Weight With Vegetables</h6>
+                                            <span>MAR 05, 2019</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__sidebar__item">
+                                <h4>Tìm kiếm gần đây</h4>
+                                <div class="blog__sidebar__item__tags">
+                                    <a href="#">Nội thất</a>
+                                    <a href="#">Làm đẹp</a>
+                                    <a href="#">Trang trí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <a href="blog_NoiThatChuDao.html" class="transition"> 
+                                            <img src="img/blog/1.jpg" class="lazyloaded" data-ll-status="loaded">
+                                        </a>
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <ul>
+                                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                            <li><i class="fa fa-comment-o"></i> 5</li>
+                                        </ul>
+                                        <h5><a href="blog_NoiThatChuDao.html">Top 5 xu hướng thiết kế nội thất chủ đạo năm 2020</a></h5>
+                                        <a href="blog_NoiThatChuDao.html" class="blog__btn">Đọc thêm <span class="arrow_right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <a href="blog_PhongNguPhongCach.html" class="transition"> 
+                                            <img src="img/blog/phong-ngu1.jpg" class="lazyloaded" data-ll-status="loaded">
+                                        </a>
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <ul>
+                                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                            <li><i class="fa fa-comment-o"></i> 5</li>
+                                        </ul>
+                                        <h5><a href="blog_PhongNguPhongCach.html">Top 8 mẫu phòng ngủ phong cách</a></h5>
+                                        <a href="blog_PhongNguPhongCach.html" class="blog__btn">Đọc thêm <span class="arrow_right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <a href="blog_NoiThatHCM.html" class="transition"> 
+                                            <img src="img/blog/van-phong1.jpg" class="lazyloaded" data-ll-status="loaded">
+                                        </a>
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <ul>
+                                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                            <li><i class="fa fa-comment-o"></i> 5</li>
+                                        </ul>
+                                        <h5><a href="blog_NoiThatHCM.html">Thiết kế nội thất văn phòng làm việc hiện đại</a></h5>
+                                        <a href="blog_NoiThatHCM.html" class="blog__btn">Đọc thêm <span class="arrow_right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__about">
+                            <div class="footer__about__logo">
+                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li>Địa chỉ: 155 CMT8 Quận 10 TP.HCM</li>
+                                <li>Phone: +84 36 263 1945</li>
+                                <li>Email: quanlk005@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                        <div class="footer__widget">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__widget">
+                            <h6>Tham gia bản tin của chúng tôi</h6>
+                            <p>Nhận thông tin cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit" class="site-btn">Subscribe</button>
+                            </form>
+                            <div class="footer__widget__social">
+                                <a href="#"><i class="fab fa-facebook-f fa-2x" title="facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-2x" title="twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube fa-2x" title="youtobe"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest fa-2x" title="pinterest"></i></a>
+                                <a href="#"><i class="fab fa-flickr fa-2x" title="flickr"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+    
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+    </body>
+
+    </html>

@@ -1,0 +1,342 @@
+    <!DOCTYPE html>
+    <html lang="zxx">
+
+    <head>
+    <title>Thanh toán</title>   
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+<head>
+        <div class="row banner-top">
+            <div class="col-sm-9 headerr">
+                <h4 style="margin-left: 22%;"> Xin chào <strong>Bạn</strong></h4>
+            </div>
+            <div class="header__top__right">
+                <div class="header__top__right__auth">
+                    <a class="dn1 hvr-underline-from-center" id="b" href="#dangnhap" onclick="openDN()"><i class="fa fa-users"></i>Trang chủ</a>
+                    <a class="dn hvr-underline-from-center" id="a" href="#dangky" onclick="openDK()"> Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+            <!-- --------------------đăng nhập------------------ -->
+    
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDN()">&times;</a>
+        <div class="overlay-content">
+          <div class="giua">
+            <h3>ĐĂNG NHẬP</h3>
+          </div>
+          <div class="form-style-6">
+            <form>
+              <p>Tên đăng nhập</p>
+              <input type="text" name="field1" value="User" />
+              <p>Mật khẩu</p>
+              <input type="password" value="123456789" />
+              <a href="#HOME" onclick="dn()"><input type="button" value="Đăng nhập"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- ------------đăng kí------------- -->
+    
+      <div id="myNav1" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDK()">&times;</a>
+        <div class="overlay-content">
+          <div class="giua">
+            <a>
+              <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+          </div>
+          <form class="form-style-7">
+            <ul>
+              <li>
+                <label for="name" class="sao">Tên đăng nhập(*)</label>
+                <input type="text" name="name" maxlength="100" class="sao" id="tendangnhap">
+              </li>
+              <li>
+                <label for="password" class="sao">Mật khẩu(*)</label>
+                <input type="password" maxlength="100" class="sao" id="mk1">
+              </li>
+              <li>
+                <label for="password" class="sao">Nhập lại mật khẩu(*)</label>
+                <input type="password" name="name" maxlength="100" class="sao" id="mk2">
+              </li>
+              <li>
+                <label for="url">Ngày sinh</label>
+                <input type="date" name="date" maxlength="100">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="100">
+              </li>
+              <li>
+                <input type="button" value="Đăng ký" onclick="check()" id="btn">
+                <input type="reset" value="Đặt lại">
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </head>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</li>                                          
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li class="active"><a href="./shoping-cart.html">Thanh Toán</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./BaoCao.html">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Tất cả danh mục</span>
+                        </div>
+                        <ul>
+                            <li><a href="./buy-1.html">Bàn</a></li>
+                            <li><a href="./buy-1.html">Ghế</a></li>
+                            <li><a href="./buy-1.html">Tủ</a></li>
+                            <li><a href="./buy-1.html">Giường</a></li>
+                            <li><a href="./buy-1.html">Kệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    Tất cả danh mục
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="Tìm kiếm ...">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Thanh Toán</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Sản Phẩm</th>
+                                    <th>Tiền</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng cộng</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table" id="table-data">
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-1.jpg" alt="">
+                                        <h5>Tủ gỗ ghép</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        1.500.000đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        3.000.000đ
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <button class="remove-button">Xóa</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-2.jpg" alt="">
+                                        <h5>Bộ ghế dài</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        2.000.000đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        2.000.000đ
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <button class="remove-button">Xóa</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-3.jpg" alt="">
+                                        <h5>Giường 2m x 1m8</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        4.500.000đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        4.500.000đ
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <button class="remove-button">Xóa</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/product/ban-lam-viec3.jpg" alt="">
+                                        <h5>Bàn 2 ngăn</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        1.300.000đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        1.300.000đ
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <button class="remove-button">Xóa</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                       <a href="./shop-grid.html"><h5>+ Tiếp tục mua sắm</h5></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-3 ">
+                    <div class="shoping__checkout">
+                        <h5>Thanh toán</h5>
+                        <ul>
+                            <li>Tổng cộng<span>10.700.000đ</span></li>
+                        </ul>
+                        <button type="submit" class="primary-btn" onclick="(Thanh toán thành công)";>Tiến hành thanh toán</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 155 CMT8 Quận 10 TP.HCM</li>
+                            <li>Phone: +84 36 263 1945</li>
+                            <li>Email: quanlk005@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Tham gia bản tin của chúng tôi</h6>
+                        <p>Nhận thông tin cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fab fa-facebook-f fa-2x" title="facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x" title="twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x" title="youtobe"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest fa-2x" title="pinterest"></i></a>
+                            <a href="#"><i class="fab fa-flickr fa-2x" title="flickr"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/a.js"></script>
+    <script src="js/b.js"></script>
+
+
+    </body>
+
+    </html>

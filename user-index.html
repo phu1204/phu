@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>   
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="img/logo-removebg-preview.png">
+</head>
+
+<body>
+
+</head>
+    <div class="row banner-top">
+        <div class="col-sm-9 headerr">
+            <h4 style="margin-left: 22%;"> Xin chào <strong>Bạn</strong></h4>
+        </div>
+        <div class="header__top__right">
+            <div class="header__top__right__auth">
+                <a class="dn hvr-underline-from-center" id="a" href="#">Trang chủ</a>
+                <a class="dn1 hvr-underline-from-center" id="b" href="index.html" >Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+     <!-- --------------------đăng nhập------------------ -->
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeDN()">&times;</a>
+    <div class="overlay-content">
+      <div class="giua">
+        <h3>ĐĂNG NHẬP</h3>
+      </div>
+      <div class="form-style-6">
+        <form>
+          <p>Tên đăng nhập</p>
+          <input type="text" name="field1" value="User" />
+          <p>Mật khẩu</p>
+          <input type="password" value="123456789" />
+          <a href="#HOME" onclick="dn()"><input type="button" value="Đăng nhập"></a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ------------đăng kí------------- -->
+
+  <div id="myNav1" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeDK()">&times;</a>
+    <div class="overlay-content">
+      <div class="giua">
+        <a>
+          <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+      </div>
+      <form class="form-style-7">
+        <ul>
+          <li>
+            <label for="name" class="sao">Tên đăng nhập(*)</label>
+            <input type="text" name="name" maxlength="100" class="sao" id="tendangnhap">
+          </li>
+          <li>
+            <label for="password" class="sao">Mật khẩu(*)</label>
+            <input type="password" maxlength="100" class="sao" id="mk1">
+          </li>
+          <li>
+            <label for="password" class="sao">Nhập lại mật khẩu(*)</label>
+            <input type="password" name="name" maxlength="100" class="sao" id="mk2">
+          </li>
+          <li>
+            <label for="url">Ngày sinh</label>
+            <input type="date" name="date" maxlength="100">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" name="email" maxlength="100">
+          </li>
+          <li>
+            <input type="button" value="Đăng ký" onclick="check()" id="btn">
+            <input type="reset" value="Đặt lại">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</head>
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</li>                                          
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./shoping-cart1.html">Thanh Toán</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./BaoCao.html">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Tất cả danh mục</span>
+                        </div>
+                        <ul>
+                            <li><a href="./buy-1.html">Bàn</a></li>
+                            <li><a href="./buy-1.html">Ghế</a></li>
+                            <li><a href="./buy-1.html">Tủ</a></li>
+                            <li><a href="./buy-1.html">Giường</a></li>
+                            <li><a href="./buy-1.html">Kệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    Tất cả danh mục
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="Tìm kiếm ...">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                <div class="hero__text">
+                    <span>Nội thất gia đình</span>
+                    <h2>Hiện đại <br />Giá cả phù hợp</h2>
+                    <p>Bảo hành 24 tháng</p>
+                    <a href="./shop-grid.html" class="primary-btn">MUA NGAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Sản phẩm mới</h2>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="featured__item">
+                        <a href="./2.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg"></div></a>                          
+                        <div class="featured__item__text">
+                            <h6>Kệ ba tầng</h6>
+                            <h5>700.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <a href="./2.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Bàn 3 ngăn</h6>
+                            <h5>2.000.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <a href="./2.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Ghế Gỗ</a></h6>
+                            <h5>300.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <a href="./2.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Tủ Hộp 50 x 50</h6>
+                            <h5>400.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <a href="./2.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Giường đơn 2m x 80</h6>
+                            <h5>700.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <a href="./1.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Kệ treo tường</h6>
+                            <h5>750.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <a href="./1.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Bộ bàn ghế gia đình</h6>
+                            <h5>5.000.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <a href="./1.html"><div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg"></div></a>
+                        <div class="featured__item__text">
+                            <h6>Giường đôi 2m2 x 1m6</h6>
+                            <h5>4.500.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Nhật ký</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <a href="blog_NoiThatChuDao.html"><img src="img/blog/blog-1.jpg" alt=""></a>
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Xu hướng thiết kế nội thất hiện nay</a></h5>
+                            <p>Các xu hướng thiết kế hiện nay luôn thay đổi ... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <a href="blog_PhongNguPhongCach.html"><img src="img/blog/blog-2.jpg" alt=""></a>
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Top 8 hướng dẫn giúp căn phòng trở nên hiện đại</a></h5>
+                            <p>Sau đây, mình sẽ hướng dẫn các bạn làm cho căn phòng của mình... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                    <div class="blog__item__pic">
+                            <a href="blog_NoiThatHCM.html"><img src="img/blog/blog-3.jpg" alt=""></a>
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Thiết kế nội thất văn phòng trở nên chuyên nghiệp</a></h5>
+                            <p>Kinh nghiệm thiết kế nhà bếp & những lỗi cần tránh Thiết kế nhà bếp không hề đơn giản như bạn nghĩ... </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 155 CMT8 Quận 10 TP.HCM</li>
+                            <li>Phone: +84 36 263 1945</li>
+                            <li>Email: nhom20@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Tham gia bản tin của chúng tôi</h6>
+                        <p>Nhận thông tin cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fab fa-facebook-f fa-2x" title="facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x" title="twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x" title="youtobe"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest fa-2x" title="pinterest"></i></a>
+                            <a href="#"><i class="fab fa-flickr fa-2x" title="flickr"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

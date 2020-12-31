@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <title>Admin</title>   
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+    <head>
+        <div class="row banner-top">
+            <div class="col-sm-9 headerr">
+                <h4 style="margin-left: 22%;"> Xin chào <strong>Admin</strong></h4>
+            </div>
+            <div class="header__top__right">
+                <div class="header__top__right__auth">
+                    <a href="./admin-index.html"><i class="fa fa-home"></i>TRANG CHỦ</a>
+                    <a href="./index.html"><i class="fa fa-out"></i>ĐĂNG XUẤT</a>
+                </div>
+            </div>
+        </div>
+    </head>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</li>                                          
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./shoping-cart.html">Thanh Toán</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./BaoCao.html">Báo cáo</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="">
+                        <div class="blog__sidebar__item">
+                            <h4>Admin menu</h4>
+                            <ul>
+                                <li><a href="#" class="active">Sản phẩm</a></li>
+                                <li><a href="./admin-listing.html">Đơn hàng</a></li>
+                                <li><a href="./admin-edit.html">Quản lí</a></li>
+                                <li><a href="./DoanhThu.html">Thống kê</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Sản Phẩm</th>
+                                    <th>Giá tiền</th>
+                                    <th>Sửa</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table" id="table-data">
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-1.jpg" alt="">
+                                        <h5>Tủ gỗ ghép</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        1.500.000đ
+                                    </td>
+                                    <td >
+                                        <a href="./admin-edit.html"><h5>Sửa</h5></a>
+                                    </td>
+                                    <td>
+                                        <button class="remove-button"> Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-2.jpg" alt="">
+                                        <h5>Bộ ghế dài</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        2.000.000đ
+                                    </td>
+                                    <td >
+                                        <a href="./admin-edit.html"><h5>Sửa</h5></a>
+                                     </td>
+                                     <td>
+                                        <button class="remove-button"> Xóa</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-3.jpg" alt="">
+                                        <h5>Giường 2m x 1m8</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        4.500.000đ
+                                    </td>
+                                    <td >
+                                        <a href="./admin-edit.html"><h5>Sửa</h5></a>
+                                     </td>
+                                     <td>
+                                        <button class="remove-button"> Xóa</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/product/ban-lam-viec3.jpg" alt="">
+                                        <h5>Bàn 2 ngăn</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        1.300.000đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <a href="./admin-edit.html"><h5>Sửa</h5></a>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        <button class="remove-button"> Xóa</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                    <a href="./admin-edit.html"><h5>+ Thêm sản phẩm</h5></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 155 CMT8 Quận 10 TP.HCM</li>
+                            <li>Phone: +84 36 263 1945</li>
+                            <li>Email: quanlk005@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Tham gia bản tin của chúng tôi</h6>
+                        <p>Nhận thông tin cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/b.js"></script>
+
+
+</body>
+
+</html>
